@@ -1,4 +1,4 @@
-package com.example.commit
+package com.example.summerpractice
 
 import org.junit.Test
 

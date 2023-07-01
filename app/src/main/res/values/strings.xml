@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">Commit</string>
+    <string name="app_name">SummerPractice</string>
+    <string name="click_on_me">Click on me</string>
+    <string name="enter_your_height">Enter your height</string>
+    <string name="enter_your_weight">Enter your weight</string>
+    <string name="enter_your_age">Enter your age</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="enter_your_details">Enter your details</string>
+    <string name="find_out_your_ideal_calorie_count">Find out your ideal calorie count</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Profile Screen</string>
 </resources>
