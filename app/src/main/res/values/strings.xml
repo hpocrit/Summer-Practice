@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Commit</string>
+    <string name="data_entered_incorrectly">Data entered incorrectly</string>
 </resources>
