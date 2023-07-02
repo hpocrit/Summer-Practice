@@ -16,7 +16,12 @@ class MainActivity : AppCompatActivity() {
 
     private var result = 0
 
-    private var clickButton: Button? = null
+    private lateinit var clickButton: Button
+
+    private val bottomLine = 0
+    private val upperLine1 = 250
+    private val upperLine2 = 50
+    private val upperLine3 = 150
 
 
     @SuppressLint("MissingInflatedId", "SetTextI18n")
@@ -30,24 +35,26 @@ class MainActivity : AppCompatActivity() {
         age = findViewById(R.id.age)
         val stringResult = findViewById<TextView>(R.id.result)
 
-        fun correctData(name : String, myHeight : Int, myWeight : Double, myAge : Int): Boolean {
-            return name.length < 50 && myHeight in 0..250 && myWeight in 0.0..250.0 && myAge in 0..150
+        var nameLength = name.length()
+
+        fun correctData(nameLength : Int, myHeight : Int, myWeight : Double, myAge : Int): Boolean {
+            return nameLength < upperLine2 && myHeight in bottomLine..upperLine1 && myWeight in bottomLine.toDouble()..upperLine1.toDouble() && myAge in bottomLine..upperLine3
         }
 
         clickButton = findViewById(R.id.button)
         clickButton?.setOnClickListener {
             if (name.text.isEmpty() || height.text.isEmpty() || weight.text.isEmpty() || age.text.isEmpty()) {
-                stringResult.text = "Data entered incorrectly"
+                stringResult.text = getString(R.string.data_entered_incorrectly)
             } else {
                 val myHeight = height.text.toString().toInt()
                 val myWeight = weight.text.toString().toDouble()
                 val myAge = age.text.toString().toInt()
 
-                if (correctData(name.text.toString(), myHeight, myWeight, myAge)) {
+                if (correctData(nameLength, myHeight, myWeight, myAge)) {
                     result = (myWeight * 10).roundToInt() + (myHeight * 6.25).roundToInt() - myAge * 5 - 161
                     stringResult.text = "Your ideal calorie count: $result"
                 } else {
-                    stringResult.text = "Data entered incorrectly"
+                    stringResult.text = getString(R.string.data_entered_incorrectly)
                 }
             }
         }
