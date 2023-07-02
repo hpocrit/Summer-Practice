@@ -17,7 +17,7 @@ class MessengerFragment: Fragment(R.layout.fragment_messenger) {
             btnToRandom.setOnClickListener {
                 findNavController().navigate(
                     R.id.action_messengerFragment_to_randomFragment,
-                    RandomFragment.createBundle("You have come from the Messenger Fragment to this fragment.")
+                    RandomFragment.createBundle(getString(R.string.messenger_fragment))
                 )
             }
         }

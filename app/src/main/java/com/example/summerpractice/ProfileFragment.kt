@@ -19,7 +19,7 @@ class ProfileFragment : Fragment(R.layout.fragment_profile) {
             btnToRandom.setOnClickListener {
                 findNavController().navigate(
                     R.id.action_profileFragment_to_randomFragment,
-                    RandomFragment.createBundle("You have come from the Profile Fragment to this fragment.")
+                    RandomFragment.createBundle(getString(R.string.profile_fragment))
                 )
             }
         }

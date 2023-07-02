@@ -18,7 +18,7 @@ class SettingFragment : Fragment(R.layout.fragment_setting) {
             btnToRandom.setOnClickListener {
                 findNavController().navigate(
                     R.id.action_settingFragment_to_randomFragment,
-                    RandomFragment.createBundle("You have come from the Setting Fragment to this fragment.")
+                    RandomFragment.createBundle(getString(R.string.setting_fragment))
                 )
             }
         }

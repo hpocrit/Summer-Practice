@@ -7,7 +7,8 @@ import com.example.summerpractice.databinding.FragmentRandomBinding
 import com.google.android.material.snackbar.Snackbar
 
 class RandomFragment: Fragment(R.layout.fragment_random) {
-    private var binding: FragmentRandomBinding? = null
+    private var _binding: FragmentRandomBinding? = null
+    var binding = _binding!!
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -16,13 +17,13 @@ class RandomFragment: Fragment(R.layout.fragment_random) {
         val name = arguments?.getString(ARG_NAME)
 
         if (name != null) {
-            Snackbar.make(binding!!.root, name, Snackbar.LENGTH_LONG).show()
+            Snackbar.make(binding.root, name, Snackbar.LENGTH_LONG).show()
         }
     }
 
     override fun onDestroyView() {
         super.onDestroyView()
-        binding = null
+        _binding = null
     }
 
     companion object {

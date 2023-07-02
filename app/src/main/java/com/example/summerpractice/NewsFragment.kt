@@ -17,7 +17,7 @@ class NewsFragment: Fragment(R.layout.fragment_news) {
             btnToRandom.setOnClickListener {
                 findNavController().navigate(
                     R.id.action_newsFragment_to_randomFragment,
-                    RandomFragment.createBundle("You have come from the News Fragment to this fragment.")
+                    RandomFragment.createBundle(getString(R.string.news_fragment))
                 )
             }
         }
