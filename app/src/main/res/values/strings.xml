@@ -1,3 +1,22 @@
 <resources>
-    <string name="app_name">Commit</string>
+    <string name="app_name">SummerPractice</string>
+    <string name="click_on_me">Click on me</string>
+    <string name="enter_your_height">Enter your height</string>
+    <string name="enter_your_weight">Enter your weight</string>
+    <string name="enter_your_age">Enter your age</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="enter_your_details">Enter your details</string>
+    <string name="find_out_your_ideal_calorie_count">Find out your ideal calorie count</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Profile Screen</string>
+    <string name="messenger_fragment">You have come from the Messenger Fragment to this fragment.</string>
+    <string name="news_fragment">You have come from the News Fragment to this fragment.</string>
+    <string name="profile_fragment">You have come from the Profile Fragment to this fragment.</string>
+    <string name="setting_fragment">You have come from the Setting Fragment to this fragment.</string>
+    <string name="main_screen">Main Screen</string>
+    <string name="gotorandom">GoToRandom</string>
+    <string name="messenger_screen">Messenger Screen</string>
+    <string name="news_screen">News Screen</string>
+    <string name="profile_screen">Profile Screen</string>
+    <string name="random_screen">Random Screen</string>
 </resources>
